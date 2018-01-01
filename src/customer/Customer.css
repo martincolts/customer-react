@@ -1,0 +1,30 @@
+.button {
+    margin-left: 10px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.editButton {
+    margin-left: 10px;
+    background-color: rgb(245, 208, 43); /* Yellow */
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.customer-row{
+    float:left;
+    margin-left:1%;
+    text-align: left;
+    width: 300px;
+}
