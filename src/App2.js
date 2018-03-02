@@ -1,23 +1,21 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import { BrowserRouter } from 'react-router-dom';
-import { HashRouter } from 'react-router-dom'
 import './App.css';
 import Menu from './Menu/Menu.js';
 import Body from './Body/Body.js';
-import App2 from './App2';
 
-
-class App extends Component {
+class App2 extends Component {
   render() {
     return (
       <div className="App">
-      <HashRouter>
-        <App2/>
-      </HashRouter>
+        <Menu/>
+        <Body/>
       </div>
     );
   }
 }
 
-export default App;
+export default App2;
+
+
