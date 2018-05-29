@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import { BrowserRouter } from 'react-router-dom';
 import { HashRouter } from 'react-router-dom'
 import './App.css';
 import Menu from './Menu/Menu.js';

@@ -5,9 +5,9 @@ export default class SalesList extends React.Component{
     constructor(props){
         super(props);
 
-    this.state = {
-        sales:[]
-        }
+        this.state = {
+            sales:[]
+            }
     }
 
     componentDidMount(){
