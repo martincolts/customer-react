@@ -8,3 +8,8 @@ export function GetSales (success, error){
     .then(success)
     .catch(error);
 }
+export function SaveSale (sale, success, error){
+    axios.post(host.ip+host.port+endpoint,sale)
+    .then(success)
+    .catch(error);
+}

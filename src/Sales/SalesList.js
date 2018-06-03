@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { GetSales } from './SalesServices';
+import '../customer/Customer.css';
 
 export default class SalesList extends React.Component{
     constructor(props){
@@ -20,11 +21,11 @@ export default class SalesList extends React.Component{
             <table>
                 <thead>
                     <tr>
-                        <th>A</th>
-                        <th>B</th>
-                        <th>C</th>
-                        <th>D</th>
-                        <th>E</th>
+                        <th>Id Venta</th>
+                        <th>Cuotas</th>
+                        <th>Monto</th>
+                        <th>Producto</th>
+                        <th>Nombre Cliente</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -54,14 +55,18 @@ export class SaleRow extends React.Component {
         super(props);
     }
 
+    popAlert(msg){
+        alert(msg)
+    }
+
     render (){
         return (
-            <tr>
+            <tr onClick={this.popAlert.bind(this,this.props.sale.quotaDTOs[0].amount)}>
                 <td>{this.props.sale.id}</td>
                 <td>{this.props.sale.fees}</td>
                 <td>{this.props.sale.amount}</td>
                 <td>{this.props.sale.product}</td>
-                <td>{this.props.sale.customerDTO.name}</td>
+                <td>{this.props.sale.customerDTO.name} {this.props.sale.customerDTO.lastname}</td>
             </tr>
         )
     }

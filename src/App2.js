@@ -6,6 +6,10 @@ import Menu from './Menu/Menu.js';
 import Body from './Body/Body.js';
 
 class App2 extends Component {
+  constructor(props){
+    super(props);
+    document.title="Customers";
+  }
   render() {
     return (
       <div className="App">

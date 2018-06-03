@@ -22,7 +22,10 @@ export default class Menu extends Component {
 
     render(){
         return (
+            <div>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
             <header>
+                
                 <nav className="topnav">
                     <ul>
                     <Link onClick={this.handleClick.bind(this,'customers')} 
@@ -32,6 +35,7 @@ export default class Menu extends Component {
                     </ul>
                 </nav>
             </header>
+            </div>
         )
     }
 }
